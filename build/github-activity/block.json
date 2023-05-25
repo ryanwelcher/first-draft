@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "first-draft/github-activity",
+  "version": "0.1.0",
+  "title": "Github Activity",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "repo": {
+      "type": "string"
+    }
+  },
+  "textdomain": "github-activity",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

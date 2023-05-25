@@ -18,6 +18,14 @@ require_once get_parent_theme_file_path( 'src/functions-helpers.php' );
 require_once get_parent_theme_file_path( 'src/Assets.php'      );
 require_once get_parent_theme_file_path( 'src/BlockStyles.php' );
 require_once get_parent_theme_file_path( 'src/Patterns.php'    );
+require_once get_parent_theme_file_path( 'src/Blocks.php'    );
 
 // Bootstrap the theme.
 theme();
+
+add_action(
+	'init',
+	function() {
+		register_block_type( get_parent_theme_file_path( 'build/github-activity' ) );
+	}
+);
