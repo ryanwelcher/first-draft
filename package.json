@@ -10,12 +10,17 @@
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"lint:md:docs": "wp-scripts lint-md-docs",
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"theme:scaffold": "theme-json --scaffold",
+		"theme:watch": "theme-json"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"@wordpress/scripts": "^26.5.0"
+	},
+	"dependencies": {
+		"@ryanwelcher/theme-json-builder": "file:../twitch-theme/theme-json-builder"
 	}
 }
